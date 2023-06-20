@@ -12,7 +12,8 @@ function handlerSubmit(event) {
     formData.forEach((value, key) => {
        data[key] = value;
     })
-    serviceContact(data)
+    serviceContact(data);
+    elements.form.reset()
 };
 
 function serviceContact(data) {

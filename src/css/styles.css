@@ -1,0 +1,12 @@
+.js-item{
+    border: 1px solid black;
+    width: 250px;
+    padding: 10px 10px;
+}
+
+.js-list{
+    list-style: none;
+    display: flex;
+    flex-direction:column ;
+    gap: 30px;
+}

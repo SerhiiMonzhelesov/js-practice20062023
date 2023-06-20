@@ -1,3 +1,4 @@
+const listResult = document.querySelector('.js-list')
 
 function serviceRequest() {
     const BASE_URL = 'http://127.0.0.1:3000';
@@ -13,13 +14,14 @@ function serviceRequest() {
 }
 
 serviceRequest().then(data => {
-    data.map(({ id, name, phone, message }) => {
+    const markup = data.map(({name, phone, message }) => {
         return `<li class="js-item">
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
+        <h3>${name}</h3>
+        <h3>${phone}</h3>
+        <h3>${message}</h3>
     </li>`
     }).join('');
+    listResult.insertAdjacentHTML('beforeend', markup);
 })
 
 
