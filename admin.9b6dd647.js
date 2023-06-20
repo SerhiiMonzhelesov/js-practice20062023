@@ -1,0 +1,2 @@
+var listResult=document.querySelector(".js-list");function serviceRequest(){return fetch("http://127.0.0.1:3000/requests").then((function(e){if(!e.ok)throw new Error(e.statusText);return e.json()}))}serviceRequest().then((function(e){var t=e.map((function(e){var t=e.name,n=e.phone,s=e.message;return'<li class="js-item">\n        <h3>'.concat(t,"</h3>\n        <h3>").concat(n,"</h3>\n        <h3>").concat(s,"</h3>\n    </li>")})).join("");listResult.insertAdjacentHTML("beforeend",t)}));
+//# sourceMappingURL=admin.9b6dd647.js.map

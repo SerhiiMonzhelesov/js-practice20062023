@@ -1,0 +1,2 @@
+const t={form:document.querySelector(".js-form")};t.form.addEventListener("submit",(function(o){o.preventDefault();const e=new FormData(o.currentTarget),n={};e.forEach(((t,o)=>{n[o]=t})),function(t){const o="http://127.0.0.1:3000/contact",e={method:"POST",body:JSON.stringify(t),headers:{"Content-type":"application/json"}};fetch(o,e).then((t=>{if(!t.ok)throw new Error(t.text);t.json})).catch((t=>console.log(t)))}(n),t.form.reset()}));
+//# sourceMappingURL=index.d516e732.js.map

@@ -1,0 +1,2 @@
+!function(){var t={form:document.querySelector(".js-form")};t.form.addEventListener("submit",(function(n){n.preventDefault();var o=new FormData(n.currentTarget),e={};o.forEach((function(t,n){e[n]=t})),function(t){var n="http://127.0.0.1:3000/contact",o={method:"POST",body:JSON.stringify(t),headers:{"Content-type":"application/json"}};fetch(n,o).then((function(t){if(!t.ok)throw new Error(t.text);t.json})).catch((function(t){return console.log(t)}))}(e),t.form.reset()}))}();
+//# sourceMappingURL=index.db0f9970.js.map
